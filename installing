@@ -1,2 +1,20 @@
 rpm -U https://yum.puppet.com/puppet7-release-el-7.noarch.rpm
 /opt/puppetlabs/puppet/bin/gem install r10k
+
+set up git repo
+use production as main branch
+
+deploy r10k
+
+mkdir -p /etc/puppetlabs/r10k
+cat > /etc/puppetlabs/r10k/r10k.yaml <<EOF
+---
+:cachedir: /var/cache/r10k
+:sources:
+  :local:
+    remote: https://github.com/lbernail/puppet-r10k.git
+    basedir: /etc/puppetlabs/code/environments
+EOF
+
+add environment.conf
+
