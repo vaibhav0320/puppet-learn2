@@ -1,0 +1,2 @@
+rpm -U https://yum.puppet.com/puppet7-release-el-7.noarch.rpm
+/opt/puppetlabs/puppet/bin/gem install r10k
