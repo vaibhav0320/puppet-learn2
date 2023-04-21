@@ -1,4 +1,3 @@
-node 'puppetmaster.vm.local'{
 
 file { 'helo.txt':
   path => '/etc/helo.txt',
@@ -6,4 +5,4 @@ file { 'helo.txt':
   content => "my os is $operatingsystem"
   
 }
-}
+
