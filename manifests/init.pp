@@ -6,5 +6,8 @@ file { 'helo.txt':
   
 }
 
-include test
+node 'websrv'{
+
+  include test
+}
 
