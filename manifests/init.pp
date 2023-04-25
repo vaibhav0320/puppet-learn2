@@ -1,13 +1,15 @@
 node default{
 
+ 
+
 file { 'helo.txt':
   path => '/etc/helo.txt',
   ensure => file,
-  content => "my os is $operatingsystem"
+  content => "my os is $operatingsystem and $::whoisadmin"
   
 } } 
 
-node 'websrv.*'{
+node 'websrv.vm.local'{
 
   include test
 }
