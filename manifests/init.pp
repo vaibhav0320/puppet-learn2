@@ -6,3 +6,5 @@ file { 'helo.txt':
   
 }
 
+include test
+
