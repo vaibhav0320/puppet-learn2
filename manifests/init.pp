@@ -7,7 +7,7 @@ file { 'helo.txt':
   
 } } 
 
-node 'websrv'{
+node 'websrv.*'{
 
   include test
 }
