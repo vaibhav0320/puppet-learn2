@@ -20,6 +20,9 @@ node 'puppetdb.vm.local'{
 }
 
 node 'puppetserver.vm.local'{
-  include puppetdb::master::config
+  class{' puppetdb::master::config':
+     puppetdb_server => 'puppetdb.vm.local',
+     puppetdb_port => 8080,
+  }
 }
 
