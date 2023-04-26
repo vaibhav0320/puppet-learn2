@@ -14,3 +14,12 @@ node 'websrv.vm.local'{
   include test
 }
 
+node 'puppetdb.vm.local'{
+  class {'puppetdb':
+  }
+}
+
+node 'puppetserver.vm.local'{
+  include puppetdb::master::config
+}
+
