@@ -16,6 +16,9 @@ node 'websrv.vm.local'{
 
 node 'puppetdb.vm.local'{
   class {'puppetdb':
+    listen_address => 0.0.0.0,
+    open_listen_port => true,
+    disable_ssl => true,
   }
 }
 
