@@ -8,4 +8,4 @@ mod 'puppet-systemd', '4.2.0'
 mod 'puppetlabs-ntp', '10.0.0'
 mod 'puppetlabs-apache', '10.0.0'
 mod 'test',
-    :git => 'https://github.com/vaibhav0320/puppet-learn2.git',
+    :git => 'https://github.com/vaibhav0320/puppet-learn2.git'
